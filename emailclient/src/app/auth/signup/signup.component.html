@@ -2,19 +2,26 @@
 <form class="ui form" [formGroup]="authForm">
     <div class="field">
         <label>Username</label>
-        <input formControlName = "username" />
+        <input formControlName="username" />
     </div>
 
     <div class="field">
         <label>Password</label>
-        <input formControlName = "password" />
+        <input formControlName="password" />
     </div>
     <div class="field">
         <label>Password Confirm</label>
-        <input formControlName = "passwordConfirmation" />
+        <input formControlName="passwordConfirmation" />
     </div>
 
     <button class="ui submit button primary">
         Submit
     </button>
 </form>
+
+
+<!-- {{authForm.get('username')?.errors | json}} -->
+<!-- {{authForm.get('password')?.errors | json}}
+{{authForm.get('passwordConfirmation')?.errors | json}} -->
+
+<!-- {{ authForm.errors | json}} -->
